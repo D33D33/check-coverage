@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "check-coverage"
+    "url": "git://github.com/D33D33/check-coverage.git"
   },
   "keywords": [
     "coverage",
@@ -16,7 +16,17 @@
   ],
   "author": "d33d33",
   "license": "MIT",
+  "bin": {
+    "check-coverage" : "lib/check-coverage.js"
+  },
   "dependencies": {
-    "xml2js": "~0.4.4"
+    "xml2js": "~0.4.4",
+    "colors": "~0.6.2",
+    "args.js": "~0.3.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-jslint": "~1.1.12",
+    "grunt-contrib-watch": "~0.6.1"
   }
 }
